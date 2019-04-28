@@ -1,3 +1,6 @@
+# 此文件和test.py文件类似，不过可以看到更详细中间输出结果，可以用来调试
+
+
 from tools.image_input import read_img_file
 import tensorflow as tf
 from tools.cnn_model import cnn_model_fn
@@ -16,7 +19,7 @@ from calculator import *
 
 
 #test
-original_img, binary_img = read_img_and_convert_to_binary('./inputImgs/44.jpg')
+original_img, binary_img = read_img_and_convert_to_binary('./testImgs/easy +/3.jpg')
 
 symbols = binary_img_segment(binary_img,original_img)
 symbols = process.detect_uncontinous_symbols(symbols,binary_img)
@@ -82,6 +85,9 @@ print(parser_tree['value'])
 #
 expression_str = r'$result:'+latex_str+'='+latex(parser_tree['value'])+'$'
 print(expression_str)
+import os
+if not os.path.exists('./result'):
+    os.mkdir('./result')
 plt.text(0.1,0.9,expression_str,fontsize=20)
 
 plt.xticks([]),plt.yticks([])
