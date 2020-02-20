@@ -1,6 +1,8 @@
 # mathAI
-**找实习：本人想在2020年6月份实习，有意者请通过邮箱2317809590@qq.com联系我。**
-**Look for internship/job! I want to be a software engineer or researcher on computer vision. Please feel free to contact me by email (2317809590@qq.com)**
+
+**找实习：本人想在2020年6月份实习，有意者请通过邮箱 2317809590@qq.com 联系我。**
+
+**Look for internship/job! I want to be a software engineer or researcher on computer vision. Please feel free to contact me by email (2317809590@qq.com).**
 
 一个拍照做题程序。输入一张包含数学计算题的图片，输出识别出的数学计算式以及计算结果。
 **请查看系统文档说明来运行程序。注意，这是一个半开源的项目，目前上传的版本只能处理简单的一维加减乘除算术表达式（如果想要识别更加复杂的表达式，可以参考数学公式识别的论文）。可以参考的代码是前面字符识别部分以及整个算法处理框架。**
