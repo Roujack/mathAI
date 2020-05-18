@@ -301,7 +301,7 @@ def post_order(node):
                     else:
                         raise (ValueError, 'post_order:t_pi')
                 simplify_node(node)
-        
+
     return latex_str
 
 # 求解表达式树

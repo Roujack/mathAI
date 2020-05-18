@@ -9,7 +9,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from tools.img_preprocess import read_img_and_convert_to_binary,binary_img_segment
 import cv2
-import parser
+import my_parser
 import tools
 from calculator import *
 import time
@@ -62,9 +62,9 @@ def solve(filename,mode = 'product'):
     # print('识别出的token')
     # print(tokens)
     # 先将每一个token初始化成一个树节点，得到一个节点列表node_list
-    node_list = parser.characters_to_nodes(characters)
+    node_list = my_parser.characters_to_nodes(characters)
 
-    parser_tree = parser.decompose(node_list)
+    parser_tree = my_parser.decompose(node_list)
     # print(parser_tree)
     set_forward_step(0)
     post_order(parser_tree)

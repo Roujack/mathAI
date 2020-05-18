@@ -11,7 +11,7 @@ node_list = []
 def parser(temp_node_list):
     length = len(temp_node_list)
     if length == 0:
-        raise (ValueError,'parser:node_list length = 0!')
+        raise (ValueError,'my_parser:node_list length = 0!')
     if length == 1:
         return temp_node_list[0]
     global current_node,next_index,node_list
